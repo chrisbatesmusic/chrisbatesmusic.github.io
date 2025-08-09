@@ -62,14 +62,9 @@ img{max-width:100%;display:block}
   margin-inline: auto;
 }
 
-/* Artist embed - native heights */
+/* Artist embed – responsive height to match Spotify layout */
 .artist-embed .embed iframe {
-  height: 232px; /* Mobile/tablet */
-}
-@media (min-width: 900px) {
-  .artist-embed .embed iframe {
-    height: 380px; /* Desktop/laptop */
-  }
+  height: clamp(232px, 56vw, 380px);
 }
 
 /* Suitcase embed section */
