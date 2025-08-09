@@ -1,74 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chris Bates</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/site.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chris Bates</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
+  <header class="header">
     <div class="container">
-        <h1 class="site-title">Chris Bates</h1>
+      <h1 class="site-title">Chris Bates</h1>
     </div>
-</header>
+  </header>
 
-<section class="hero" style="background-image: url('img/hero-bg.jpg');">
-    <div class="container hero-content">
-        <h2>Suitcase</h2>
-        <p>Out now</p>
-        <iframe style="border-radius:12px" 
-            src="https://open.spotify.com/embed/track/3xNAA7ayIeO0NyYP0Y6auO?utm_source=generator&theme=0" 
-            width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-        </iframe>
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('img/hero-bg.jpg')">
+    <div class="container hero__inner">
+      <h2 class="hero__title">Suitcase</h2>
+      <p class="eyebrow">Out now</p>
+      <div class="embed">
+        <iframe title="Suitcase on Spotify"
+          src="https://open.spotify.com/embed/track/3xNAA7ayIeO0NyYP0Y6auO?utm_source=generator&theme=0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="listen-everywhere">
+  <!-- LISTEN EVERYWHERE -->
+  <section class="listen">
+    <div class="container listen__links">
+      <a class="btn" href="https://open.spotify.com/artist/1wMxoWB76tKp8gOJDGRxxJ" target="_blank">
+        <i class="fa fa-spotify"></i><span>Spotify</span>
+      </a>
+      <a class="btn btn--ghost" href="https://music.apple.com/nz/artist/chris-bates/1483001799" target="_blank">
+        <i class="fa fa-apple"></i><span>Apple Music</span>
+      </a>
+      <a class="btn btn--ghost" href="https://www.youtube.com/chrisbates" target="_blank">
+        <i class="fa fa-youtube-play"></i><span>YouTube</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
     <div class="container">
-        <h3>Listen Everywhere</h3>
-        <p>
-            <a href="https://open.spotify.com/artist/1wMxoWB76tKp8gOJDGRxxJ" target="_blank">Spotify</a> |
-            <a href="https://music.apple.com/nz/artist/chris-bates/1483001799" target="_blank">Apple Music</a> |
-            <a href="https://www.youtube.com/chrisbates" target="_blank">YouTube</a>
-        </p>
-    </div>
-</section>
-
-<section class="about">
-    <div class="container">
-        <h2>About Me</h2>
+      <div class="section-title">
+        <h3>About Me</h3>
+        <div class="bg-title" aria-hidden="true">About Me</div>
+      </div>
+      <div class="prose">
         <p>Described by his peers as New Zealand’s “pop prince,” Chris Bates is a rising singer-songwriter celebrated for his soulful vocals and emotionally charged storytelling.</p>
-        <p>With singles like November (No Hard Feelings), Edinburgh, and Takeaway Cup, Bates has carved a distinct place in New Zealand’s pop scene, earning spots on Spotify’s New Music Friday AU/NZ, Peaceful Pop, and Apple Music’s New In Pop. His latest single, Suitcase—the first taste of his upcoming release—captures the raw, bittersweet emotions of a relationship ending as one person prepares to leave the country.</p>
+        <p>With singles like <em>November (No Hard Feelings)</em>, <em>Edinburgh</em>, and <em>Takeaway Cup</em>, Bates has carved a distinct place in New Zealand’s pop scene, earning spots on Spotify’s New Music Friday AU/NZ, Peaceful Pop, and Apple Music’s New In Pop. His latest single, <em>Suitcase</em>—the first taste of his upcoming release—captures the raw, bittersweet emotions of a relationship ending as one person prepares to leave the country.</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="tracks">
-    <div class="container">
-        <iframe src="https://open.spotify.com/embed/artist/1wMxoWB76tKp8gOJDGRxxJ" 
-            frameborder="0" allowtransparency="true" allow="encrypted-media" width="100%" height="380">
-        </iframe>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="container text-center">
-        <a href="mailto:itschrisbates@gmail.com" class="footer-email">itschrisbates@gmail.com</a>
-        <div class="social-links">
-            <a href="https://instagram.com/itschrisbates" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@itschrisbates" target="_blank"><i class="fa fa-music"></i></a>
-            <a href="https://facebook.com/itschrisbates" target="_blank"><i class="fa fa-facebook"></i></a>
+  <!-- TRACKS -->
+  <section class="tracks">
+    <div class="container grid">
+      <div class="col">
+        <div class="embed embed--tall">
+          <iframe title="Artist on Spotify"
+            src="https://open.spotify.com/embed/artist/1wMxoWB76tKp8gOJDGRxxJ"
+            allow="encrypted-media"></iframe>
         </div>
-        <p class="music-links">
-            <a href="https://open.spotify.com/artist/1wMxoWB76tKp8gOJDGRxxJ" target="_blank">Spotify</a> |
-            <a href="https://music.apple.com/nz/artist/chris-bates/1483001799" target="_blank">Apple Music</a> |
-            <a href="https://www.youtube.com/chrisbates" target="_blank">YouTube</a>
-        </p>
+      </div>
+      <div class="col">
+        <img class="tracks__image" src="img/track-right.jpg" alt="Chris Bates artwork">
+      </div>
     </div>
-</footer>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="footer__email" href="mailto:itschrisbates@gmail.com">itschrisbates@gmail.com</a>
+      <div class="footer__social">
+        <a href="https://instagram.com/itschrisbates" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@itschrisbates" target="_blank" aria-label="TikTok"><i class="fa fa-music"></i></a>
+        <a href="https://facebook.com/itschrisbates" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+      </div>
+      <div class="footer__music">
+        <a href="https://open.spotify.com/artist/1wMxoWB76tKp8gOJDGRxxJ" target="_blank">Spotify</a>
+        <span>•</span>
+        <a href="https://music.apple.com/nz/artist/chris-bates/1483001799" target="_blank">Apple Music</a>
+        <span>•</span>
+        <a href="https://www.youtube.com/chrisbates" target="_blank">YouTube</a>
+      </div>
+      <p class="tiny">© <span id="year"></span> Chris Bates</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
 
 </body>
 </html>
