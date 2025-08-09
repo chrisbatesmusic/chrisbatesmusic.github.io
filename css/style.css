@@ -62,11 +62,6 @@ img{max-width:100%;display:block}
   margin-inline: auto;
 }
 
-/* Artist embed – responsive height to match Spotify layout */
-.artist-embed .embed iframe {
-  height: clamp(232px, 56vw, 380px);
-}
-
 /* Suitcase embed section */
 .single-embed{padding:18px 0 0}
 
@@ -88,9 +83,6 @@ img{max-width:100%;display:block}
 .about{padding:36px 0 6px}
 .prose{max-width:820px;margin:0 auto;color:var(--muted);font-size:18px;text-align:center}
 .prose em{font-style:italic}
-
-/* Artist embed section */
-.artist-embed{padding:28px 0 46px}
 
 /* Footer */
 .footer{background:linear-gradient(180deg,#10141a,#0c1016);color:#e9eef7;text-align:center;padding:28px 0 44px}
