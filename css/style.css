@@ -2949,3 +2949,12 @@ ol {
 		background-position: top 0 left 19%;
 	}
 }
+@media (max-width: 768px) {
+  .section-title h1 { 
+    font-size: 48px;   /* smaller for mobile */
+    top: 50%;          /* move to halfway down container */
+    left: 50%;
+    transform: translate(-50%, -50%); /* perfectly center it */
+    opacity: 0.15;     /* keep it faint */
+    text-align: center;
+  }
