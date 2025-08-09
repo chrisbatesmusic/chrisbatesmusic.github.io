@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chris Bates</title>
-
-  <!-- Fonts (fast, free, professional) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css?v=4" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="wrap">
-      <div class="brand">Chris Bates</div>
+      <h1 class="brand">Chris Bates</h1>
     </div>
   </header>
 
   <main>
-
-    <!-- HERO -->
+    <!-- HERO (photo clean, text above face) -->
     <section class="hero">
-      <img class="hero-img" src="img/hero-bg.jpg" alt="Chris Bates" />
-      <div class="hero-copy">
-        <h1 class="hero-title">Suitcase</h1>
-        <p class="hero-kicker">Out Now</p>
+      <div class="hero__bg"></div>
+      <div class="wrap hero__content">
+        <h2 class="hero__title">Suitcase</h2>
+        <p class="hero__kicker">OUT NOW</p>
       </div>
       <div class="edge-fade"></div>
     </section>
 
-    <!-- RELEASE EMBED + CTAs -->
-    <section class="release">
-      <div class="wrap">
-        <div class="embed-card">
-          <iframe
-            style="border-radius:12px"
-            src="https://open.spotify.com/embed/track/3xNAA7ayIeO0NyYP0Y6auO?utm_source=generator&theme=0"
-            width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy">
-          </iframe>
-        </div>
-
-        <ul class="cta-list">
-          <li><a class="btn btn-spotify" href="https://open.spotify.com/artist/1wMxoWB76tKp8gOJDGRxxJ" target="_blank" rel="noopener">Spotify</a></li>
-          <li><a class="btn" href="https://music.apple.com/nz/artist/chris-bates/1483001799" target="_blank" rel="noopener">Apple Music</a></li>
-          <li><a class="btn" href="https://www.youtube.com/chrisbates" target="_blank" rel="noopener">YouTube</a></li>
-        </ul>
-      </div>
+    <!-- Single Spotify embed -->
+    <section class="wrap player">
+      <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3xNAA7ayIeO0NyYP0Y6auO?utm_source=generator&theme=0"
+        width="100%" height="152" frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
     </section>
 
-    <!-- ABOUT -->
-    <section class="about">
-      <div class="wrap narrow">
-        <h2 class="section-title">About Me</h2>
-        <div class="copy">
-          <p>Described by his peers as New Zealand’s “pop prince,” Chris Bates is a rising singer-songwriter celebrated for his soulful vocals and emotionally charged storytelling.</p>
-          <p>With singles like <em>November (No Hard Feelings)</em>, <em>Edinburgh</em>, and <em>Takeaway Cup</em>, Bates has carved a distinct place in New Zealand’s pop scene, earning spots on Spotify’s New Music Friday AU/NZ, Peaceful Pop, and Apple Music’s New In Pop. His latest single, <em>Suitcase</em>—the first taste of his upcoming release—captures the raw, bittersweet emotions of a relationship ending as one person prepares to leave the country.</p>
-        </div>
-      </div>
+    <!-- Listen buttons (centered) -->
+    <section class="wrap listen">
+      <a class="pill pill--spotify" href="https://open.spotify.com/artist/1wMxoWB76tKp8gOJDGRxxJ" target="_blank" rel="noopener">Spotify</a>
+      <a class="pill" href="https://music.apple.com/nz/artist/chris-bates/1483001799" target="_blank" rel="noopener">Apple Music</a>
+      <a class="pill" href="https://www.youtube.com/chrisbates" target="_blank" rel="noopener">YouTube</a>
     </section>
 
-    <!-- ARTIST PLAYLIST (single embed only) -->
-    <section class="playlist">
-      <div class="wrap">
-        <iframe
-          src="https://open.spotify.com/embed/artist/1wMxoWB76tKp8gOJDGRxxJ"
-          width="100%" height="380" frameborder="0"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy">
-        </iframe>
-      </div>
+    <!-- About -->
+    <section class="wrap about">
+      <h3>About Me</h3>
+      <p>
+        Described by his peers as New Zealand’s “pop prince,” Chris Bates is a rising singer-songwriter
+        celebrated for his soulful vocals and emotionally charged storytelling.
+      </p>
+      <p>
+        With singles like <em>November (No Hard Feelings)</em>, <em>Edinburgh</em>, and <em>Takeaway Cup</em>,
+        Bates has carved a distinct place in New Zealand’s pop scene, earning spots on Spotify’s New Music Friday
+        AU/NZ, Peaceful Pop, and Apple Music’s New In Pop. His latest single, <em>Suitcase</em>—the first taste of
+        his upcoming release—captures the raw, bittersweet emotions of a relationship ending as one person prepares
+        to leave the country.
+      </p>
     </section>
-
   </main>
 
-  <footer class="site-footer">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="wrap">
-      <a class="email" href="mailto:itschrisbates@gmail.com">itschrisbates@gmail.com</a>
-      <div class="socials">
-        <a aria-label="Instagram" href="https://instagram.com/itschrisbates" target="_blank" rel="noopener">IG</a>
-        <a aria-label="TikTok" href="https://www.tiktok.com/@itschrisbates" target="_blank" rel="noopener">TT</a>
-        <a aria-label="Facebook" href="https://www.facebook.com/itschrisbates" target="_blank" rel="noopener">FB</a>
+      <a class="footer__email" href="mailto:itschrisbates@gmail.com">itschrisbates@gmail.com</a>
+      <div class="footer__social">
+        <a href="https://instagram.com/itschrisbates" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" width="20" height="20">
+            <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.21-30.21c-20.85-8.29-70.35-6.41-94.5-6.41s-73.65-1.88-94.5,6.41a54,54,0,0,0-30.21,30.21c-8.29,20.85-6.41,70.35-6.41,94.5s-1.88,73.65,6.41,94.5a54,54,0,0,0,30.21,30.21c20.85,8.29,70.35,6.41,94.5,6.41s73.65-1.88,94.5-6.41a54,54,0,0,0,30.21-30.21c8.29-20.85,6.41-70.35,6.41-94.5S357,182.54,348.71,161.68ZM224,338a82,82,0,1,1,82-82A82.09,82.09,0,0,1,224,338Zm85.33-148.16a19.2,19.2,0,1,1,19.2-19.2A19.18,19.18,0,0,1,309.33,189.84ZM398.8,80A48,48,0,0,0,368,49.2C349.6,40,315.3,32,224,32S98.4,40,80,49.2A48,48,0,0,0,49.2,80C40,98.4,32,132.7,32,224s8,125.6,17.2,144A48,48,0,0,0,80,398.8C98.4,408,132.7,416,224,416s125.6-8,144-17.2a48,48,0,0,0,30.8-30.8C408,349.6,416,315.3,416,224S408,98.4,398.8,80Z"/>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@itschrisbates" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" width="20" height="20">
+            <path d="M448,209.91v102.4a200,200,0,1,1-200-200h102.4c0,53.02,43.02,96.03,96.03,96.03ZM224,160a96,96,0,1,0,96,96A96,96,0,0,0,224,160Z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/itschrisbates" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512" width="20" height="20">
+            <path d="M279.14 288l14.22-92.66h-88.91V129.33c0-25.35 12.42-50.06 52.24-50.06H293V6.26S273.58 0 248.36 0C192.11 0 150.2 38.66 150.2 109.33V195.3H69.09V288h81.11v224h100.17V288z"/>
+          </svg>
+        </a>
       </div>
-      <p class="copyline">© 2025 Chris Bates</p>
+      <p class="footer__copy">© <span id="year"></span> Chris Bates</p>
     </div>
   </footer>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
