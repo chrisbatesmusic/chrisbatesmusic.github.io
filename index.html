@@ -6,7 +6,7 @@
   <title>Chris Bates</title>
 
   <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Site CSS -->
@@ -20,15 +20,22 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO (image only, no embed blocking your face) -->
   <section class="hero" style="background-image:url('img/hero-bg.jpg')">
     <div class="container hero__inner">
       <h2 class="hero__title">Suitcase</h2>
       <p class="eyebrow">Out now</p>
+    </div>
+  </section>
+
+  <!-- SUITCASE EMBED (moved under hero) -->
+  <section class="single-embed">
+    <div class="container">
       <div class="embed">
         <iframe title="Suitcase on Spotify"
           src="https://open.spotify.com/embed/track/3xNAA7ayIeO0NyYP0Y6auO?utm_source=generator&theme=0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
       </div>
     </div>
   </section>
@@ -48,12 +55,11 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT (centered, no shadow card) -->
   <section class="about">
     <div class="container">
       <div class="section-title">
         <h3>About Me</h3>
-        <div class="bg-title" aria-hidden="true">About Me</div>
       </div>
       <div class="prose">
         <p>Described by his peers as New Zealand’s “pop prince,” Chris Bates is a rising singer-songwriter celebrated for his soulful vocals and emotionally charged storytelling.</p>
@@ -62,18 +68,13 @@
     </div>
   </section>
 
-  <!-- TRACKS -->
-  <section class="tracks">
-    <div class="container grid">
-      <div class="col">
-        <div class="embed embed--tall">
-          <iframe title="Artist on Spotify"
-            src="https://open.spotify.com/embed/artist/1wMxoWB76tKp8gOJDGRxxJ"
-            allow="encrypted-media"></iframe>
-        </div>
-      </div>
-      <div class="col">
-        <img class="tracks__image" src="img/track-right.jpg" alt="Chris Bates artwork">
+  <!-- ARTIST EMBED -->
+  <section class="artist-embed">
+    <div class="container">
+      <div class="embed embed--tall">
+        <iframe title="Artist on Spotify"
+          src="https://open.spotify.com/embed/artist/1wMxoWB76tKp8gOJDGRxxJ"
+          allow="encrypted-media"></iframe>
       </div>
     </div>
   </section>
@@ -83,15 +84,13 @@
       <a class="footer__email" href="mailto:itschrisbates@gmail.com">itschrisbates@gmail.com</a>
       <div class="footer__social">
         <a href="https://instagram.com/itschrisbates" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@itschrisbates" target="_blank" aria-label="TikTok"><i class="fa fa-music"></i></a>
+        <a href="https://www.tiktok.com/@itschrisbates" target="_blank" aria-label="TikTok" class="tiktok">
+          <!-- Real TikTok icon (SVG) -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M21 8.5a6.9 6.9 0 01-4-1.3v6.2a6.4 6.4 0 11-5.5-6.3v3a3.4 3.4 0 103.4 3.4V2h3a6.9 6.9 0 003.1 5.6z"/>
+          </svg>
+        </a>
         <a href="https://facebook.com/itschrisbates" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
-      </div>
-      <div class="footer__music">
-        <a href="https://open.spotify.com/artist/1wMxoWB76tKp8gOJDGRxxJ" target="_blank">Spotify</a>
-        <span>•</span>
-        <a href="https://music.apple.com/nz/artist/chris-bates/1483001799" target="_blank">Apple Music</a>
-        <span>•</span>
-        <a href="https://www.youtube.com/chrisbates" target="_blank">YouTube</a>
       </div>
       <p class="tiny">© <span id="year"></span> Chris Bates</p>
     </div>
