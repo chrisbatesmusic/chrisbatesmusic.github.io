@@ -1,21 +1,20 @@
-/* ============== Chris Bates — Moody Clean ============== */
+/* ============== Chris Bates — Moody Clean (refined) ============== */
 :root{
-  --ink:#0f1216;          /* page bg */
-  --ink-2:#151a21;        /* panels */
-  --denim:#2b3a56;        /* lines / subtle accents */
-  --denim-2:#5f7498;      /* text accent */
-  --teal:#63b7af;         /* primary accent */
+  --ink:#0f1216;
+  --ink-2:#151a21;
+  --denim:#2b3a56;
+  --denim-2:#5f7498;
+  --teal:#63b7af;
   --paper:#ffffff;
   --muted:#cfd6e3;
   --radius:16px;
 }
 
-/* Base */
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
   font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-  background: var(--ink);
+  background:var(--ink);
   color:#e9eef7;
   line-height:1.65;
 }
@@ -37,55 +36,62 @@ img{max-width:100%;display:block}
 /* Hero */
 .hero{
   position:relative;background-size:cover;background-position:center;background-repeat:no-repeat;
-  padding:84px 0 40px;isolation:isolate
+  padding:64px 0 28px; /* a bit tighter than before */
+  isolation:isolate;
 }
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,18,22,.10),rgba(15,18,22,.55))}
 .hero__inner{text-align:center}
-.hero__title{
-  margin:0 0 6px;line-height:1;font-size:clamp(40px,6vw,92px);
-  color:#bfe7e2
-}
+.hero__title{margin:0 0 6px;line-height:1;font-size:clamp(40px,6vw,92px);color:#bfe7e2}
 .eyebrow{margin:0;color:#9fb2cf;text-transform:uppercase;letter-spacing:.22em}
 
-/* Embeds - base (track) */
-.embed {
-  margin-top: 10px;
+/* Listen card (player + buttons grouped) */
+.listen-card{padding:6px 0 0}
+.listen-card__inner{
+  background:linear-gradient(180deg,#131822,#0f131a);
+  border:1px solid #1f2a3f;
+  border-radius:24px;
+  padding:16px;
+  box-shadow:0 14px 30px rgba(0,0,0,.25);
 }
-.embed iframe {
-  width: 100%;
-  height: 152px; /* Track embed native height */
-  border: 0;
-  border-radius: 12px;
-  background: #000;
-  box-shadow: 0 10px 24px rgba(0,0,0,.25);
-  display: block;
-  margin-inline: auto;
+@media (min-width:768px){
+  .listen-card__inner{padding:20px 22px}
 }
 
-/* Suitcase embed section */
-.single-embed{padding:18px 0 0}
+/* Embeds (track) */
+.embed{margin-top:2px}
+.embed iframe{
+  width:100%;
+  height:152px;             /* native track height = no black bars */
+  border:0;border-radius:12px;background:#000;
+  box-shadow:0 10px 24px rgba(0,0,0,.24);
+  display:block;margin-inline:auto;
+}
 
 /* Listen buttons */
-.listen{padding:36px 0 8px}
-.listen__links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.listen__links{
+  display:flex;gap:14px;justify-content:center;flex-wrap:wrap;
+  margin-top:16px;
+}
 .btn{
   display:inline-flex;align-items:center;gap:8px;justify-content:center;
   padding:11px 16px;border-radius:999px;font-weight:700;
   background:var(--teal);color:#0a0e12;border:1px solid transparent;
-  box-shadow:0 6px 12px rgba(0,0,0,.18);transition:transform .12s,filter .12s,background .12s
+  box-shadow:0 6px 12px rgba(0,0,0,.18);
+  transition:transform .12s,filter .12s,background .12s,box-shadow .12s;
 }
 .btn:hover{transform:translateY(-1px);filter:saturate(1.02)}
 .btn--outline{
-  background:transparent;color:#cfe1ff;border-color:#6e85aa
+  background:transparent;color:#cfe1ff;border-color:#2a3b58;border:1px solid #2a3b58
 }
 
 /* About */
-.about{padding:36px 0 6px}
+.about{padding:28px 0 6px}              /* tightened top spacing for mobile */
+@media (min-width:768px){ .about{padding:36px 0 6px} }
 .prose{max-width:820px;margin:0 auto;color:var(--muted);font-size:18px;text-align:center}
 .prose em{font-style:italic}
 
 /* Footer */
-.footer{background:linear-gradient(180deg,#10141a,#0c1016);color:#e9eef7;text-align:center;padding:28px 0 44px}
+.footer{background:linear-gradient(180deg,#10141a,#0c1016);color:#e9eef7;text-align:center;padding:28px 0 44px;margin-top:14px}
 .footer__email{font-weight:700}
 .footer__social{display:flex;gap:10px;justify-content:center;margin:12px 0}
 .footer__social a{
@@ -94,7 +100,7 @@ img{max-width:100%;display:block}
 }
 .footer .tiny{opacity:.7;margin:8px 0 0}
 
-/* Responsive */
+/* Responsive tweaks */
 @media (max-width:768px){
-  .hero{padding:74px 0 34px}
+  .hero{padding:58px 0 22px}
 }
