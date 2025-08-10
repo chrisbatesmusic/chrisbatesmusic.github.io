@@ -39,7 +39,7 @@ body {
   height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 24px;
+  border-radius: 0; /* removed rounding for sharp square corners */
   box-shadow: 0 20px 60px rgba(0,0,0,.45);
 }
 
