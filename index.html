@@ -4,70 +4,41 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Chris Bates</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preload" as="image" href="img/film-art.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" href="images/film-art.png">
 </head>
 <body>
-  <main class="scroller" aria-label="Chris Bates site">
-    <!-- TAB 1: Suitcase -->
-    <section class="panel hero" id="suitcase">
-      <img class="artwork" src="img/film-art.png" alt="Suitcase single artwork" loading="eager" />
-      <h1 class="title">Suitcase</h1>
-      <a class="play" href="https://music.drm.co.nz/suitcase" aria-label="Play Suitcase (smartlink)">Play</a>
-      <div class="hint" aria-hidden="true">Swipe ↓</div>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <img class="artwork" src="images/film-art.png" alt="Suitcase single artwork" loading="eager" />
+    <h1 class="title">Suitcase</h1>
+    <a class="play" href="https://music.drm.co.nz/suitcase" aria-label="Play Suitcase (smartlink)">Play</a>
+  </section>
 
-    <!-- TAB 2: About -->
-    <section class="panel about" id="about">
-      <div class="content">
-        <h2>About Me</h2>
-        <p>
-          Chris Bates is a singer-songwriter from New Zealand known for soulful vocals and emotionally
-          charged storytelling. With singles like <em>November (No Hard Feelings)</em>, <em>Edinburgh</em>,
-          and <em>Takeaway Cup</em>, he’s earned placements across AU/NZ. <em>Suitcase</em> continues that trajectory.
-        </p>
-      </div>
-    </section>
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="content">
+      <h2>About Me</h2>
+      <p>
+        Chris Bates is a singer-songwriter from New Zealand known for soulful vocals and emotionally
+        charged storytelling. With singles like <em>November (No Hard Feelings)</em>, <em>Edinburgh</em>,
+        and <em>Takeaway Cup</em>, he’s earned placements across AU/NZ.
+        <em>Suitcase</em> continues that trajectory.
+      </p>
+    </div>
+  </section>
 
-    <!-- TAB 3: Contact -->
-    <section class="panel contact" id="contact">
-      <div class="content">
-        <h2>Contact</h2>
-        <p><a class="email" href="mailto:itschrisbates@gmail.com">itschrisbates@gmail.com</a></p>
-        <nav class="links" aria-label="Social links">
-          <a href="https://instagram.com/itschrisbates" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://www.tiktok.com/@itschrisbates" target="_blank" rel="noopener">TikTok</a>
-          <a href="https://www.facebook.com/itschrisbates" target="_blank" rel="noopener">Facebook</a>
-        </nav>
-      </div>
-    </section>
-
-    <!-- SCROLL DOTS -->
-    <nav class="dots" aria-label="Page sections">
-      <a href="#suitcase" class="dot" aria-label="Suitcase"></a>
-      <a href="#about" class="dot" aria-label="About"></a>
-      <a href="#contact" class="dot" aria-label="Contact"></a>
-    </nav>
-  </main>
-
-  <!-- DOT HIGHLIGHT JS -->
-  <script>
-    const dots = [...document.querySelectorAll('.dot')];
-    const ids = ['suitcase','about','contact'];
-    const byId = id => document.getElementById(id);
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){
-          const i = ids.indexOf(e.target.id);
-          dots.forEach(d=>d.classList.remove('active'));
-          if(i>=0) dots[i].classList.add('active');
-        }
-      });
-    }, { threshold: 0.6 });
-    ids.map(byId).forEach(el=>io.observe(el));
-  </script>
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="content">
+      <h2>Contact</h2>
+      <p><a class="email" href="mailto:itschrisbates@gmail.com">itschrisbates@gmail.com</a></p>
+      <nav class="links" aria-label="Social links">
+        <a href="https://instagram.com/itschrisbates" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@itschrisbates" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/itschrisbates" target="_blank" rel="noopener">Facebook</a>
+      </nav>
+    </div>
+  </section>
 </body>
 </html>
-
-
-
