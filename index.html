@@ -1,86 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Chris Bates</title>
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-  <!-- Site CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" href="images/film-art.png">
 </head>
 <body>
+  <main class="scroller" aria-label="Chris Bates site">
+    <!-- TAB 1: Suitcase -->
+    <section class="panel hero" id="suitcase">
+      <img class="artwork" src="images/film-art.png" alt="Suitcase single artwork" loading="eager" />
+      <h1 class="title">Suitcase</h1>
+      <a class="play" href="https://music.drm.co.nz/suitcase" aria-label="Play Suitcase (smartlink)">Play</a>
+      <div class="hint" aria-hidden="true">Swipe ↓</div>
+    </section>
 
-  <header class="header">
-    <div class="container">
-      <h1 class="site-title">Chris Bates</h1>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" style="background-image:url('img/hero-bg.jpg')">
-    <div class="container hero__inner">
-      <h2 class="hero__title">Suitcase</h2>
-      <p class="eyebrow">Out now</p>
-    </div>
-  </section>
-
-  <!-- LISTEN CARD (player + buttons) -->
-  <section class="listen-card">
-    <div class="container">
-      <div class="listen-card__inner">
-        <div class="embed">
-          <iframe title="Suitcase on Spotify"
-            src="https://open.spotify.com/embed/track/3xNAA7ayIeO0NyYP0Y6auO?utm_source=generator&theme=0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"></iframe>
-        </div>
-
-        <div class="listen__links">
-          <a class="btn" href="https://open.spotify.com/artist/1wMxoWB76tKp8gOJDGRxxJ" target="_blank">
-            <i class="fa fa-spotify"></i><span>Spotify</span>
-          </a>
-          <a class="btn btn--outline" href="https://music.apple.com/nz/artist/chris-bates/1483001799" target="_blank">
-            <i class="fa fa-apple"></i><span>Apple Music</span>
-          </a>
-          <a class="btn btn--outline" href="https://www.youtube.com/chrisbates" target="_blank">
-            <i class="fa fa-youtube-play"></i><span>YouTube</span>
-          </a>
-        </div>
+    <!-- TAB 2: About -->
+    <section class="panel about" id="about">
+      <div class="content">
+        <h2>About Me</h2>
+        <p>
+          Chris Bates is a singer-songwriter from New Zealand known for soulful vocals and emotionally
+          charged storytelling. With singles like <em>November (No Hard Feelings)</em>, <em>Edinburgh</em>,
+          and <em>Takeaway Cup</em>, he’s earned placements across AU/NZ. <em>Suitcase</em> continues that trajectory.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <div class="container">
-      <div class="section-title"><h3>About Me</h3></div>
-      <div class="prose">
-        <p>Described by his peers as New Zealand’s “pop prince,” Chris Bates is a rising singer-songwriter celebrated for his soulful vocals and emotionally charged storytelling.</p>
-        <p>With singles like <em>November (No Hard Feelings)</em>, <em>Edinburgh</em>, and <em>Takeaway Cup</em>, Bates has carved a distinct place in New Zealand’s pop scene, earning spots on Spotify’s New Music Friday AU/NZ, Peaceful Pop, and Apple Music’s New In Pop. His latest single, <em>Suitcase</em>—the first taste of his upcoming release—captures the raw, bittersweet emotions of a relationship ending as one person prepares to leave the country.</p>
+    <!-- TAB 3: Contact -->
+    <section class="panel contact" id="contact">
+      <div class="content">
+        <h2>Contact</h2>
+        <p><a class="email" href="mailto:itschrisbates@gmail.com">itschrisbates@gmail.com</a></p>
+        <nav class="links" aria-label="Social links">
+          <a href="https://instagram.com/itschrisbates" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@itschrisbates" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.facebook.com/itschrisbates" target="_blank" rel="noopener">Facebook</a>
+        </nav>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <a class="footer__email" href="mailto:itschrisbates@gmail.com">itschrisbates@gmail.com</a>
-      <div class="footer__social">
-        <a href="https://instagram.com/itschrisbates" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@itschrisbates" target="_blank" aria-label="TikTok" class="tiktok" title="TikTok">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M21 8.5a6.9 6.9 0 01-4-1.3v6.2a6.4 6.4 0 11-5.5-6.3v3a3.4 3.4 0 103.4 3.4V2h3a6.9 6.9 0 003.1 5.6z"/>
-          </svg>
-        </a>
-        <a href="https://facebook.com/itschrisbates" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
-      </div>
-      <p class="tiny">© <span id="year"></span> Chris Bates</p>
-    </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
+    <!-- SCROLL DOTS -->
+    <nav class="dots" aria-label="Page sections">
+      <a href="#suitcase" class="dot" aria-label="Suitcase"></a>
+      <a href="#about" class="dot" aria-label="About"></a>
+      <a href="#contact" class="dot" aria-label="Contact"></a>
+    </nav>
+  </main>
 
+  <!-- DOT HIGHLIGHT JS -->
+  <script>
+    const dots = [...document.querySelectorAll('.dot')];
+    const ids = ['suitcase','about','contact'];
+    const byId = id => document.getElementById(id);
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          const i = ids.indexOf(e.target.id);
+          dots.forEach(d=>d.classList.remove('active'));
+          if(i>=0) dots[i].classList.add('active');
+        }
+      });
+    }, { threshold: 0.6 });
+    ids.map(byId).forEach(el=>io.observe(el));
+  </script>
 </body>
 </html>
