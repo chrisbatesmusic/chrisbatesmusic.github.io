@@ -51,29 +51,22 @@ body {
 /* About / Video section */
 .about {
   background: var(--bg-soft);
-  padding: 72px 24px;
+  padding: 40px 24px; /* tighter since no heading */
 }
 .content {
   max-width: 740px;
   margin: 0 auto;
   text-align: center;
 }
-.content h2 {
-  font-size: clamp(28px, 4.5vw, 40px);
-  margin-bottom: 20px;
-}
-.content p {
-  color: #cfe0d9;
-  font-size: clamp(15px, 2.7vw, 18px);
-}
 
-/* Video container */
+/* Vertical video container (9:16) */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 177.77%; /* 9:16 aspect ratio */
   height: 0;
   overflow: hidden;
-  max-width: 100%;
+  max-width: 400px; /* keeps vertical video a good size */
+  margin: 0 auto;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,.4);
 }
