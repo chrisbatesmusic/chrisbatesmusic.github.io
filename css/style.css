@@ -4,6 +4,7 @@
   --text: #e7f2ed;
   --muted: #9fb5ad;
   --accent: #b9f1dd;
+  color-scheme: dark;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
@@ -39,7 +40,7 @@ body {
   height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 0; /* sharp square corners */
+  border-radius: 0;
   box-shadow: 0 20px 60px rgba(0,0,0,.45);
 }
 
@@ -63,14 +64,14 @@ body {
   margin-bottom: 20px;
 }
 .content p {
-  color: #cfe0d9;
+  color: #d8e7e1;
   font-size: clamp(15px, 2.7vw, 18px);
 }
 
 /* Video container */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -96,6 +97,7 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
+.email:hover, .email:focus { text-decoration: underline; }
 .links {
   margin-top: 12px;
   display: flex;
@@ -112,7 +114,10 @@ body {
   color: var(--text);
   font-weight: 600;
   opacity: .9;
+  transition: opacity .2s, transform .2s;
 }
+.links a:hover { opacity: 1; transform: translateY(-1px); }
+.links a:active { transform: translateY(0); }
 .links a:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
