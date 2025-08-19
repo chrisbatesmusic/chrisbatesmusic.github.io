@@ -3,18 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Chris Bates — singer/songwriter. Watch the Suitcase video and find links to socials." />
+  <meta name="theme-color" content="#0b0f13" />
+
+  <!-- Social / Open Graph -->
+  <meta property="og:title" content="Chris Bates — Suitcase" />
+  <meta property="og:description" content="Watch the Suitcase video and connect on socials." />
+  <meta property="og:image" content="img/film-art-1200.jpg" />
+  <meta property="og:type" content="website" />
+
   <title>Chris Bates</title>
-  <link rel="stylesheet" href="css/style.css?v=2" />
-  <link rel="preload" as="image" href="img/film-art-1200.webp">
+
+  <!-- Favicon + Icons -->
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="img/favicon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" sizes="180x180">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css?v=3" />
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image"
+        href="img/film-art-1200.webp"
+        imagesrcset="img/film-art-1200.webp 1200w, img/film-art-1200.jpg 1200w"
+        imagesizes="(max-width:520px) 84vw, 520px">
 </head>
 <body>
   <!-- HERO -->
   <section class="hero">
     <a href="https://music.drm.co.nz/suitcase" aria-label="Play Suitcase (smartlink)">
       <picture>
-        <source srcset="img/film-art-1200.webp" type="image/webp">
-        <source srcset="img/film-art-1200.jpg" type="image/jpeg">
-        <img class="artwork" src="img/film-art-1200.jpg" alt="Suitcase single artwork" loading="eager" />
+        <source srcset="img/film-art-1200.webp 1200w" type="image/webp"
+                sizes="(max-width:520px) 84vw, 520px">
+        <source srcset="img/film-art-1200.jpg 1200w" type="image/jpeg"
+                sizes="(max-width:520px) 84vw, 520px">
+        <img class="artwork" src="img/film-art-1200.jpg" alt="Suitcase single artwork"
+             width="1200" height="1200" decoding="async" fetchpriority="high" />
       </picture>
     </a>
     <h1 class="title">
@@ -25,11 +49,12 @@
   <!-- VIDEO -->
   <section class="about">
     <div class="content">
-      <h2>Watch</h2>
       <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/22Yx44erdGY"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        <iframe width="560" height="315"
+          src="https://www.youtube-nocookie.com/embed/22Yx44erdGY"
+          title="Suitcase — YouTube video player" loading="lazy"
+          referrerpolicy="origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
       </div>
