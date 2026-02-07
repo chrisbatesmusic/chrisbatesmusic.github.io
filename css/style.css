@@ -223,7 +223,7 @@ body.theme-music{
   left:50%;
   transform:translateX(-50%);
   bottom:46px;
-  width:min(780px, calc(100% - 48px));
+  width:min(1040px, calc(100% - 48px)); /* widened for large screens */
   padding:22px 22px 20px;
   text-align:center;
   color:#fff;
