@@ -125,6 +125,9 @@ body{
   font-size:1.7rem;
   font-weight:700;
   line-height:1;
+
+  padding:10px 0;        /* 👈 add this */
+  display:inline-block;  /* 👈 and this */
 }
 
 @media (max-width:1180px){
