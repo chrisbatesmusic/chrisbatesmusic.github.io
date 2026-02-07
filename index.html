@@ -1,97 +1,102 @@
-<!doctype html>
+<!-- index.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Chris Bates — singer/songwriter. Watch the Sunsets and Summer Nights video and find links to socials." />
-  <meta name="theme-color" content="#0b0f13" />
-
-  <!-- Social / Open Graph -->
-  <meta property="og:title" content="Chris Bates — Sunsets and Summer Nights" />
-  <meta property="og:description" content="Watch the Sunsets and Summer Nights video and connect on socials." />
-  <meta property="og:image" content="img/sasn-1200.jpg" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chris Bates — Sunsets and Summer Nights</title>
-
-  <!-- Favicon + Icons -->
-  <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="img/favicon-192.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" sizes="180x180">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css?v=3" />
-
-  <!-- Preload hero image -->
-  <link rel="preload" as="image"
-        href="img/sasn-1200.webp"
-        imagesrcset="img/sasn-1200.webp 1200w, img/sasn-1200.jpg 1200w"
-        imagesizes="(max-width:520px) 84vw, 520px">
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
-<body>
+<body class="theme-music">
 
-  <!-- HERO -->
-  <section class="hero">
-    <a href="https://music.drm.co.nz/sasn-cb" aria-label="Play Sunsets and Summer Nights (smartlink)">
-      <picture>
-        <source srcset="img/sasn-1200.webp 1200w" type="image/webp"
-                sizes="(max-width:520px) 84vw, 520px">
-        <source srcset="img/sasn-1200.jpg 1200w" type="image/jpeg"
-                sizes="(max-width:520px) 84vw, 520px">
-        <img
-          class="artwork"
-          src="img/sasn-1200.jpg"
-          alt="Sunsets and Summer Nights single artwork"
-          width="1200"
-          height="1200"
-          decoding="async"
-          fetchpriority="high"
-        />
-      </picture>
-    </a>
-
-    <h1 class="title">
-      <a href="https://music.drm.co.nz/sasn-cb" class="title-link">
-        Sunsets and Summer Nights
-      </a>
-    </h1>
-  </section>
-
-  <!-- VIDEO -->
-  <section class="about">
-    <div class="content">
-      <div class="video-container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube-nocookie.com/embed/AqrrHY6PJQ8"
-          title="Sunsets and Summer Nights — YouTube video player"
-          loading="lazy"
-          referrerpolicy="origin-when-cross-origin"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="/listen" class="nav-link">Listen</a>
+        <a href="/videos" class="nav-link">Videos</a>
+        <a href="/releases" class="nav-link">Releases</a>
       </div>
-    </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <div class="content">
-      <h2>Contact</h2>
-      <p>
-        <a class="email" href="mailto:itschrisbates@gmail.com">
-          itschrisbates@gmail.com
-        </a>
-      </p>
-      <nav class="links" aria-label="Social links">
-        <a href="https://instagram.com/itschrisbates" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.tiktok.com/@itschrisbates" target="_blank" rel="noopener">TikTok</a>
-        <a href="https://www.facebook.com/itschrisbates" target="_blank" rel="noopener">Facebook</a>
-      </nav>
-    </div>
-  </section>
+      <a href="/" class="brand">Chris Bates</a>
 
+      <div class="nav-right">
+        <a href="/gallery" class="nav-link">Gallery</a>
+        <a href="/bio" class="nav-link">Bio</a>
+        <a href="/contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card">
+        <p class="kicker">New EP</p>
+        <h1>Sunsets and Summer Nights</h1>
+        <p class="sub">Nature, nostalgia, and a little 80s glow.</p>
+
+        <div class="cta-row">
+          <a href="/listen" class="btn btn-primary">Listen</a>
+          <a href="/videos" class="btn btn-ghost">Watch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="card">
+            <h2>Featured video</h2>
+            <p class="muted">Drop your YouTube embed here (or keep it on /videos).</p>
+
+            <!-- Replace the iframe src with your actual video -->
+            <div class="embed">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Quick links</h2>
+            <p class="muted">Keep it simple. One line each. No clutter.</p>
+
+            <div class="pill-row">
+              <a class="pill" href="/listen">Spotify / Apple / Bandcamp</a>
+              <a class="pill" href="/videos">YouTube</a>
+              <a class="pill" href="/contact">Bookings</a>
+            </div>
+
+            <div class="rule"></div>
+
+            <h3>Contact</h3>
+            <p class="muted">
+              <a class="link" href="mailto:itschrisbates@gmail.com">itschrisbates@gmail.com</a>
+            </p>
+
+            <div class="cta-row left">
+              <a href="https://instagram.com/" class="btn btn-ghost" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://tiktok.com/" class="btn btn-ghost" target="_blank" rel="noreferrer">TikTok</a>
+              <a href="https://facebook.com/" class="btn btn-ghost" target="_blank" rel="noreferrer">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted small">© <span id="year"></span> Chris Bates</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
