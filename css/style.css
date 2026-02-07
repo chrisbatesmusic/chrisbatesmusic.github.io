@@ -499,3 +499,80 @@ body.theme-music{
   .video-grid.two-col{ grid-template-columns:1fr; }
   .videos-section{ padding:18px; }
 }
+
+/* ================= BIO PAGE ================= */
+
+.bio-hero{
+  background-image:url("/img/oceanlandscape.webp");
+}
+
+.bio-card{
+  padding:18px 28px;
+}
+
+.bio-card h1{
+  margin:0;
+  font-family:"Oswald", system-ui, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:0.18em;
+  font-size:1.4rem;
+}
+
+/* layout */
+.bio{
+  padding:46px var(--gutter) 80px;
+}
+
+.bio-inner{
+  width:min(980px, 100%);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap:48px;
+}
+
+/* text */
+.bio-text p{
+  margin:0 0 22px;
+  font-size:1.08rem;
+  line-height:1.7;
+  color:rgba(12,18,22,.78);
+}
+
+/* links */
+.bio-links{
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+
+.bio-group h3{
+  margin:0 0 12px;
+  font-family:"Oswald", system-ui, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:0.16em;
+  font-size:0.85rem;
+  color:var(--ink);
+}
+
+.bio-group a{
+  display:block;
+  text-decoration:none;
+  margin-bottom:8px;
+  font-size:1rem;
+  color:rgba(12,18,22,.70);
+  transition:color .15s ease, transform .15s ease;
+}
+
+.bio-group a:hover{
+  color:var(--ink);
+  transform:translateX(2px);
+}
+
+/* mobile */
+@media (max-width:900px){
+  .bio-inner{
+    grid-template-columns:1fr;
+    gap:36px;
+  }
+}
