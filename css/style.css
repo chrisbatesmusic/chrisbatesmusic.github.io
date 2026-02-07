@@ -406,3 +406,14 @@ body.theme-music{
   .nav-link{ letter-spacing:0.16em; }
   .btn{ letter-spacing:0.14em; }
 }
+
+/* force consistent Listen buttons on music page */
+.music .btn-primary{
+  color:rgba(12,18,22,.85);
+  border-color:rgba(12,18,22,.45);
+  background:rgba(255,255,255,.55);
+}
+
+.music .btn-primary:hover{
+  background:rgba(255,255,255,.75);
+}
