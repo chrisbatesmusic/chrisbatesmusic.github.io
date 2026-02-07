@@ -116,6 +116,10 @@ body{
   background:rgba(12,18,22,.35);
 }
 
+.brand::after{
+  display:none;
+}
+
 .brand{
   text-decoration:none;
   color:var(--ink);
