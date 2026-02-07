@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music — Chris Bates</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="theme-music">
+
+<header class="header">
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="/music.html" class="nav-link active">Music</a>
+      <a href="/videos.html" class="nav-link">Videos</a>
+    </div>
+
+    <a href="/" class="brand">Chris Bates</a>
+
+    <div class="nav-right">
+      <a href="/gallery.html" class="nav-link">Gallery</a>
+      <a href="/bio.html" class="nav-link">Bio</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="music">
+
+  <!-- EP 1: Sunsets and Summer Nights -->
+  <section class="release release-sasn">
+    <div class="release-inner">
+      <div class="release-art">
+        <img src="/img/sasn-1200.webp" alt="Sunsets and Summer Nights artwork">
+      </div>
+
+      <div class="release-info">
+        <h2>Sunsets and Summer Nights</h2>
+
+        <ol class="tracklist">
+          <li>Caution to the Wind</li>
+          <li>Identity Crisis</li>
+          <li>Suitcase</li>
+          <li>Missed the Memo</li>
+          <li>Do You Think of Me Sometimes?</li>
+        </ol>
+
+        <a href="https://music.drm.co.nz/sasn-cb" target="_blank" rel="noreferrer" class="btn btn-primary">
+          Listen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EP 2: Forgive Me If I Lose My Mind -->
+  <section class="release release-forgive">
+    <div class="release-inner">
+      <div class="release-art">
+        <img src="/img/EP3.webp" alt="Forgive Me If I Lose My Mind artwork">
+      </div>
+
+      <div class="release-info">
+        <h2>Forgive Me If I Lose My Mind</h2>
+
+        <ol class="tracklist">
+          <li>Trust Nobody</li>
+          <li>Takeaway Cup</li>
+          <li>Lose My Mind</li>
+          <li>Tired of This</li>
+          <li>Two Hearts</li>
+        </ol>
+
+        <a href="https://found.ee/FMIILMM-CB" target="_blank" rel="noreferrer" class="btn btn-primary">
+          Listen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EP 3: They Don’t Know a Thing About Me 2.0 -->
+  <section class="release release-tdk2">
+    <div class="release-inner">
+      <div class="release-art">
+        <img src="/img/EP2.webp" alt="They Don’t Know a Thing About Me 2.0 artwork">
+      </div>
+
+      <div class="release-info">
+        <h2>They Don’t Know a Thing About Me 2.0</h2>
+
+        <ol class="tracklist">
+          <li>Best for Me</li>
+          <li>Voicemail</li>
+          <li>17</li>
+          <li>November (No Hard Feelings)</li>
+          <li>they don’t know a thing about me</li>
+        </ol>
+
+        <a href="https://smarturl.it/christheydontknow" target="_blank" rel="noreferrer" class="btn btn-primary">
+          Listen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EP 4: They Don’t Know a Thing About Me -->
+  <section class="release release-tdk1">
+    <div class="release-inner">
+      <div class="release-art">
+        <img src="/img/EP1.webp" alt="They Don’t Know a Thing About Me artwork">
+      </div>
+
+      <div class="release-info">
+        <h2>They Don’t Know a Thing About Me</h2>
+
+        <ol class="tracklist">
+          <li>Chasing Kites</li>
+          <li>Hold Me</li>
+          <li>Minute</li>
+          <li>Find a Way</li>
+          <li>Used to This</li>
+        </ol>
+
+        <a href="https://smarturl.it/aqjnuo" target="_blank" rel="noreferrer" class="btn btn-primary">
+          Listen
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
