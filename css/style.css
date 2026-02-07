@@ -29,9 +29,9 @@
   --gutter:clamp(18px, 3vw, 34px);
 
   /* “early evening” palette */
-  --bg:#07090c;
-  --ink:#e9edf2;
-  --muted:rgba(233,237,242,.72);
+--bg:#fbfaf7;          /* warm off-white / light sand */
+--ink:#0c1216;         /* soft dark ink */
+--muted:rgba(12,18,22,.62);
 
   --teal:#1f6f7a;
   --peach:#ff9b7a;
@@ -63,9 +63,9 @@ img{ max-width:100%; height:auto; display:block; }
 /* subtle atmospheric background (very light) */
 body.theme-music{
   background:
-    radial-gradient(1200px 700px at 55% -20%, rgba(31,111,122,.14), rgba(0,0,0,0) 62%),
-    radial-gradient(900px 520px at 18% 110%, rgba(255,155,122,.12), rgba(0,0,0,0) 60%),
-    linear-gradient(180deg, #05070a, #07090c 55%, #05070a);
+    radial-gradient(1200px 700px at 55% -20%, rgba(31,111,122,.18), rgba(255,255,255,0) 62%),
+    radial-gradient(900px 520px at 18% 110%, rgba(255,155,122,.18), rgba(255,255,255,0) 60%),
+    linear-gradient(180deg, #fbfaf7, #f6efe6 70%, #fbfaf7);
 }
 
 /* ================= HEADER / NAV ================= */
@@ -115,7 +115,7 @@ body.theme-music{
   left:0; right:0;
   bottom:2px;
   height:1px;
-  background:rgba(255,255,255,.35);
+ background:rgba(12,18,22,.35);
 }
 
 .brand{
