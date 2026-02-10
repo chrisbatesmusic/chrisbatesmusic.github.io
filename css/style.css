@@ -63,7 +63,7 @@ body{
   background:
     radial-gradient(1200px 700px at 55% -20%, rgba(31,111,122,.10), rgba(255,255,255,0) 62%),
     radial-gradient(900px 520px at 18% 110%, rgba(255,155,122,.10), rgba(255,255,255,0) 60%),
-    linear-gradient(180deg, #fbfaf7, #f6efe6 70%, #fbfaf7);
+    linear-gradient(180deg, #fbfaf7 0%, #f6efe6 55%, #fbfaf7 100%);
 }
 
 /* ================= HEADER / NAV ================= */
