@@ -1,4 +1,4 @@
-/* /css/style.css — Chris Bates (Home + Music + Videos + Bio + Contact) */
+/* /css/style.css — Chris Bates (Home + Music + Videos + Bio + Contact + Events) */
 
 /* ================= FONTS ================= */
 @font-face{
@@ -52,8 +52,6 @@ body{
   color:var(--ink);
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
-
-  /* Fix iOS Safari text resizing */
   -webkit-text-size-adjust:100%;
 
   background:
@@ -101,7 +99,6 @@ img{ max-width:100%; height:auto; display:block; }
 }
 .nav-link:hover{ color:var(--ink); }
 
-/* Active state underline */
 .nav-link.active{
   color:var(--ink);
   position:relative;
@@ -115,7 +112,6 @@ img{ max-width:100%; height:auto; display:block; }
   background:rgba(12,18,22,.35);
 }
 
-/* Never underline the center brand */
 .brand::after{ display:none !important; }
 
 .brand{
@@ -287,7 +283,6 @@ img{ max-width:100%; height:auto; display:block; }
   display:flex;
 }
 
-/* subtle tints per EP */
 .release::before{
   content:"";
   position:absolute;
@@ -443,7 +438,6 @@ img{ max-width:100%; height:auto; display:block; }
   gap:18px;
 }
 
-/* embed cards */
 .video-embed{
   border-radius:var(--radius-md);
   background:rgba(255,255,255,.70);
@@ -475,7 +469,6 @@ img{ max-width:100%; height:auto; display:block; }
   color:var(--ink);
 }
 
-/* responsive */
 @media (max-width:980px){
   .video-grid{ grid-template-columns:1fr; }
   .videos-section{ padding:18px; }
@@ -657,20 +650,9 @@ img{ max-width:100%; height:auto; display:block; }
   margin:18px auto 90px;
 }
 
-.events-card{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:24px;
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  border:1px solid rgba(12,18,22,.10);
-  background:rgba(255,255,255,.40);
-  box-shadow:0 14px 34px rgba(0,0,0,.10);
-  padding:24px;
-}
-
-.events-copy{
-  align-self:center;
+.events-header{
+  width:min(820px, 100%);
+  margin:0 auto 24px;
 }
 
 .events-kicker{
@@ -681,7 +663,7 @@ img{ max-width:100%; height:auto; display:block; }
   color:var(--muted);
 }
 
-.events-copy h1{
+.events-header h1{
   margin:0 0 14px;
   font-family:"Oswald", system-ui, sans-serif;
   text-transform:uppercase;
@@ -692,59 +674,22 @@ img{ max-width:100%; height:auto; display:block; }
 }
 
 .events-intro{
-  margin:0 0 22px;
+  margin:0;
   color:rgba(12,18,22,.74);
   line-height:1.7;
   font-size:1.04rem;
-  max-width:58ch;
+  max-width:60ch;
 }
 
-.events-points{
-  display:grid;
-  gap:16px;
-  margin-bottom:22px;
-}
-
-.events-point h2{
-  margin:0 0 6px;
-  font-family:"Oswald", system-ui, sans-serif;
-  text-transform:uppercase;
-  letter-spacing:0.10em;
-  font-size:1rem;
-  color:var(--ink);
-}
-
-.events-point p{
-  margin:0;
-  color:rgba(12,18,22,.70);
-  line-height:1.6;
-  font-size:0.98rem;
-}
-
-.events-enquire{
-  display:inline-block;
-  text-decoration:none;
-  padding:12px 16px;
-  border-radius:var(--radius-pill);
-  background:rgba(255,255,255,.65);
-  border:1px solid rgba(12,18,22,.16);
-  color:rgba(12,18,22,.86);
-  font-weight:650;
-  letter-spacing:0.10em;
-  text-transform:uppercase;
-  font-size:0.82rem;
-  transition:transform .12s ease, background .12s ease, border-color .12s ease, box-shadow .12s ease;
-}
-
-.events-enquire:hover{
-  transform:translateY(-1px);
-  background:rgba(255,255,255,.80);
-  border-color:rgba(12,18,22,.26);
-  box-shadow:0 10px 28px rgba(0,0,0,.10);
-}
-
-.events-video{
-  align-self:center;
+.events-video-block{
+  width:min(980px, 100%);
+  margin:0 auto 24px;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  border:1px solid rgba(12,18,22,.10);
+  background:rgba(255,255,255,.40);
+  box-shadow:0 14px 34px rgba(0,0,0,.10);
+  padding:18px;
 }
 
 .events-video-frame{
@@ -772,9 +717,144 @@ img{ max-width:100%; height:auto; display:block; }
   font-size:0.95rem;
 }
 
+.wedding-packages{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:18px;
+  margin-bottom:24px;
+}
+
+.package-card{
+  border-radius:var(--radius-lg);
+  border:1px solid rgba(12,18,22,.10);
+  background:rgba(255,255,255,.40);
+  box-shadow:0 14px 34px rgba(0,0,0,.10);
+  padding:22px;
+}
+
+.package-label{
+  margin:0 0 10px;
+  font-size:0.76rem;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.package-card h2{
+  margin:0 0 8px;
+  font-family:"Oswald", system-ui, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  font-size:1.5rem;
+  color:var(--ink);
+}
+
+.package-price{
+  margin:0 0 14px;
+  font-size:1.02rem;
+  font-weight:650;
+  color:var(--ink);
+}
+
+.package-copy{
+  margin:0 0 14px;
+  color:rgba(12,18,22,.72);
+  line-height:1.65;
+}
+
+.package-list{
+  margin:0;
+  padding-left:1.1rem;
+  color:rgba(12,18,22,.72);
+  line-height:1.7;
+}
+
+.events-meta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-bottom:24px;
+}
+
+.events-meta-block{
+  border-radius:var(--radius-lg);
+  border:1px solid rgba(12,18,22,.10);
+  background:rgba(255,255,255,.40);
+  box-shadow:0 14px 34px rgba(0,0,0,.10);
+  padding:22px;
+}
+
+.events-meta-block h3{
+  margin:0 0 12px;
+  font-family:"Oswald", system-ui, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:0.10em;
+  font-size:1.05rem;
+  color:var(--ink);
+}
+
+.events-meta-block ul{
+  margin:0;
+  padding-left:1.1rem;
+  color:rgba(12,18,22,.72);
+  line-height:1.7;
+}
+
+.events-other{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.events-other-card{
+  border-radius:var(--radius-lg);
+  border:1px solid rgba(12,18,22,.10);
+  background:rgba(255,255,255,.40);
+  box-shadow:0 14px 34px rgba(0,0,0,.10);
+  padding:22px;
+}
+
+.events-other-card h2{
+  margin:0 0 10px;
+  font-family:"Oswald", system-ui, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  font-size:1.4rem;
+  color:var(--ink);
+}
+
+.events-other-card p{
+  margin:0 0 16px;
+  color:rgba(12,18,22,.72);
+  line-height:1.7;
+}
+
+.events-enquire{
+  display:inline-block;
+  text-decoration:none;
+  padding:12px 16px;
+  border-radius:var(--radius-pill);
+  background:rgba(255,255,255,.65);
+  border:1px solid rgba(12,18,22,.16);
+  color:rgba(12,18,22,.86);
+  font-weight:650;
+  letter-spacing:0.10em;
+  text-transform:uppercase;
+  font-size:0.82rem;
+  transition:transform .12s ease, background .12s ease, border-color .12s ease, box-shadow .12s ease;
+}
+
+.events-enquire:hover{
+  transform:translateY(-1px);
+  background:rgba(255,255,255,.80);
+  border-color:rgba(12,18,22,.26);
+  box-shadow:0 10px 28px rgba(0,0,0,.10);
+}
+
 @media (max-width:980px){
-  .events-card{
+  .wedding-packages,
+  .events-meta,
+  .events-other{
     grid-template-columns:1fr;
-    padding:18px;
   }
 }
