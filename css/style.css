@@ -645,11 +645,13 @@ img{ max-width:100%; height:auto; display:block; }
 }
 
 /* ================= EVENTS PAGE ================= */
+
 .events{
   width:min(var(--max), calc(100% - (var(--gutter) * 2)));
   margin:18px auto 90px;
 }
 
+/* cards */
 .events-card{
   border-radius:var(--radius-lg);
   overflow:hidden;
@@ -659,7 +661,12 @@ img{ max-width:100%; height:auto; display:block; }
   padding:28px;
 }
 
-/* headline */
+/* spacing between cards */
+.events-card + .events-card{
+  margin-top:30px;
+}
+
+/* wedding title */
 .events-copy h1{
   margin:0 0 12px;
   font-family:"Oswald", system-ui, sans-serif;
@@ -670,7 +677,16 @@ img{ max-width:100%; height:auto; display:block; }
   color:var(--ink);
 }
 
-/* intro paragraph */
+/* corporate + private titles */
+.events-card h2{
+  font-family:"Oswald", system-ui, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  font-size:1.6rem;
+  margin:0 0 10px;
+}
+
+/* intro text */
 .events-intro{
   margin:0 0 22px;
   color:rgba(12,18,22,.74);
@@ -700,7 +716,7 @@ img{ max-width:100%; height:auto; display:block; }
   border:0;
 }
 
-/* enquire button */
+/* enquire buttons */
 .events-enquire{
   display:inline-block;
   margin-top:20px;
@@ -748,7 +764,6 @@ img{ max-width:100%; height:auto; display:block; }
   color:rgba(12,18,22,.74);
 }
 
-/* responsive */
 @media (max-width:980px){
   .events-card{
     padding:20px;
