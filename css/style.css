@@ -649,58 +649,50 @@ img{ max-width:100%; height:auto; display:block; }
 .events{
   width:min(var(--max), calc(100% - (var(--gutter) * 2)));
   margin:18px auto 90px;
+  display:flex;
+  flex-direction:column;
+  gap:22px; /* consistent spacing between boxes */
 }
 
-/* cards */
 .events-card{
   border-radius:var(--radius-lg);
-  overflow:hidden;
   border:1px solid rgba(12,18,22,.10);
   background:rgba(255,255,255,.40);
   box-shadow:0 14px 34px rgba(0,0,0,.10);
-  padding:28px;
+  padding:24px;
 }
 
-/* spacing between cards */
-.events-card + .events-card{
-  margin-top:30px;
-}
+/* MAIN WEDDING SECTION */
 
-/* wedding title */
 .events-copy h1{
-  margin:0 0 12px;
+  margin:0 0 14px;
   font-family:"Oswald", system-ui, sans-serif;
   text-transform:uppercase;
   letter-spacing:0.08em;
-  font-size:clamp(34px, 4.2vw, 58px);
+  font-size:clamp(30px, 3.6vw, 46px); /* matches rest of site */
   line-height:1.02;
   color:var(--ink);
 }
 
-/* corporate + private titles */
-.events-card h2{
-  font-family:"Oswald", system-ui, sans-serif;
-  text-transform:uppercase;
-  letter-spacing:0.08em;
-  font-size:1.6rem;
-  margin:0 0 10px;
-}
-
-/* intro text */
 .events-intro{
-  margin:0 0 22px;
+  margin:0 0 20px;
   color:rgba(12,18,22,.74);
-  line-height:1.75;
+  line-height:1.7;
   font-size:1.04rem;
-  max-width:58ch;
+  max-width:60ch;
 }
 
-/* video */
+/* VIDEO */
+
+.events-video{
+  margin:18px 0 18px;
+}
+
 .events-video-frame{
   position:relative;
   width:100%;
+  max-width:760px; /* keeps it from being massive */
   aspect-ratio:16 / 9;
-  margin-top:18px;
   border-radius:var(--radius-md);
   overflow:hidden;
   border:1px solid rgba(12,18,22,.12);
@@ -716,10 +708,10 @@ img{ max-width:100%; height:auto; display:block; }
   border:0;
 }
 
-/* enquire buttons */
+/* BUTTON */
+
 .events-enquire{
   display:inline-block;
-  margin-top:20px;
   text-decoration:none;
   padding:12px 16px;
   border-radius:var(--radius-pill);
@@ -730,6 +722,7 @@ img{ max-width:100%; height:auto; display:block; }
   letter-spacing:0.10em;
   text-transform:uppercase;
   font-size:0.82rem;
+  margin-bottom:18px;
   transition:transform .12s ease, background .12s ease, border-color .12s ease, box-shadow .12s ease;
 }
 
@@ -740,32 +733,64 @@ img{ max-width:100%; height:auto; display:block; }
   box-shadow:0 10px 28px rgba(0,0,0,.10);
 }
 
-/* dropdown sections */
+/* DROPDOWNS */
+
 .events-dropdown{
-  margin-top:18px;
+  margin:12px 0;
 }
 
 .events-dropdown summary{
   cursor:pointer;
-  font-weight:650;
+  font-weight:600;
   font-size:1rem;
-  padding:12px 0;
+  letter-spacing:0.04em;
+  margin-bottom:8px;
 }
 
 .events-dropdown h3{
-  margin:16px 0 6px;
-  font-size:1.15rem;
+  margin:14px 0 6px;
+  font-size:1.05rem;
+  font-weight:650;
+  color:var(--ink);
 }
 
 .events-dropdown ul{
-  margin:0 0 16px;
+  margin:0 0 10px;
   padding-left:1.2rem;
+  color:rgba(12,18,22,.72);
   line-height:1.7;
-  color:rgba(12,18,22,.74);
 }
 
+/* CORPORATE + PRIVATE */
+
+.events-card h2{
+  margin:0 0 12px;
+  font-family:"Oswald", system-ui, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  font-size:clamp(24px, 2.8vw, 34px);
+  color:var(--ink);
+}
+
+.events-card p{
+  margin:0 0 18px;
+  color:rgba(12,18,22,.74);
+  line-height:1.7;
+  font-size:1.02rem;
+}
+
+/* MOBILE */
+
 @media (max-width:980px){
+  .events{
+    gap:18px;
+  }
+
   .events-card{
-    padding:20px;
+    padding:18px;
+  }
+
+  .events-video-frame{
+    max-width:100%;
   }
 }
