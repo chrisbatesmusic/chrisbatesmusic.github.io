@@ -651,7 +651,7 @@ img{ max-width:100%; height:auto; display:block; }
   margin:18px auto 90px;
   display:flex;
   flex-direction:column;
-  gap:22px;
+  gap:22px; /* consistent spacing between boxes */
 }
 
 .events-card{
@@ -669,7 +669,7 @@ img{ max-width:100%; height:auto; display:block; }
   font-family:"Oswald", system-ui, sans-serif;
   text-transform:uppercase;
   letter-spacing:0.08em;
-  font-size:clamp(30px, 3.6vw, 46px);
+  font-size:clamp(30px, 3.6vw, 46px); /* matches rest of site */
   line-height:1.02;
   color:var(--ink);
 }
@@ -691,7 +691,7 @@ img{ max-width:100%; height:auto; display:block; }
 .events-video-frame{
   position:relative;
   width:100%;
-  max-width:760px;
+  max-width:760px; /* keeps it from being massive */
   aspect-ratio:16 / 9;
   border-radius:var(--radius-md);
   overflow:hidden;
