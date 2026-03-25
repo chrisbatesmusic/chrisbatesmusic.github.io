@@ -825,3 +825,17 @@ img{ max-width:100%; height:auto; display:block; }
 .video-embed h3{
   font-size: 1rem;
 }
+
+/* ================= EVENTS TITLE MATCH FIX ================= */
+
+.events-copy h1,
+.events-card h2{
+  margin: 0 0 14px;
+  font-family: "Oswald", system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: clamp(30px, 3.6vw, 46px);
+  font-weight: 700;
+  line-height: 1.02;
+  color: var(--ink);
+}
