@@ -794,3 +794,34 @@ img{ max-width:100%; height:auto; display:block; }
     max-width:100%;
   }
 }
+
+/* ================= TITLE NORMALISER ================= */
+
+/* MAIN PAGE TITLES */
+.videos-title h1,
+.bio-content h1,
+.contact-card h1,
+.events-copy h1,
+.release-info h2{
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.05;
+}
+
+/* SECTION TITLES */
+.events-card h2{
+  font-size: clamp(24px, 2.8vw, 34px);
+  line-height: 1.08;
+}
+
+/* SMALL HEADINGS */
+.videos-section h2,
+.bio-block h2{
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.15;
+}
+
+/* TIDY SMALL LABELS */
+.events-dropdown h3,
+.video-embed h3{
+  font-size: 1rem;
+}
